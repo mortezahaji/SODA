@@ -18,7 +18,7 @@ SODA_Kriging (Data,X,Y,Expand,Margin)
   \item{Margin}{An integer indicating how much margin need to be added to the X and Y, see example below.}
 }
 \details{
-Expand and Margin will be used in the "expand.grid" function. For example:
+Expand and Margin will be used in the "expand.grid" function. For example: \cr
   expand.grid(seq(min(X-Margin),max(X+Margin),l=Expand),seq(Y-Margin),max(Y+Margin),l=Expand))
 }
 \value{
