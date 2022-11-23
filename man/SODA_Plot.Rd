@@ -23,7 +23,8 @@ SODA_Plot (Data,Var,X,Y,Type=c("3D","2D","Interactive"),Res=500)
   A 2D, 3D, or interactive plot
 }
 \references{
-Hajihosseini M, Amini P, Voicu D, Dinu I, Pyne S. Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape. Cancers. 2022; 14(21):5235. https://doi.org/10.3390/cancers14215235
+Hajihosseini M, Amini P, Voicu D, Dinu I, Pyne S. Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape. Cancers. 2022; 14(21):5235. https://doi.org/10.3390/cancers14215235 \cr
+Amini, P., Hajihosseini, M., Pyne, S., & Dinu, I. (2022). Geographically Weighted Linear Combination Test for Gene Set Analysis of a Continuous Spatial Phenotype as applied to Intratumor Heterogeneity. bioRxiv.
 
 }
 \author{
