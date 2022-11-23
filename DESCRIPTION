@@ -1,0 +1,35 @@
+Package: SODA
+Type: Package
+Title: Spatial Omic Data Analysis (SODA) using Interdisciplinary Approaches
+Version: 0.1.0
+Author: Morteza Hajihosseini
+Maintainer: mortezah@stanford.edu
+Description: SODA is an R package designed to facilitate differentially expressed gene and
+    heterogeneity analysis of tumor molecular landscape for
+    spatial transcriptomics data by providing interactive visualizations that
+    display the synthesize high-resolution and continuous gene expression landscapes of a given tumor sample
+    and integration of such landscapes to identify and map the enriched regions of the pathways of interest with
+    identification of genes that have a spatial differential expression at locations representing specific phenotypic contexts.
+    An important feature of SODA is the computation of spatial entropy measures for quantification and objective characterization of intratumor heterogeneity.
+    The package is built around a shiny "gadget" to allow the exploration of the
+    data with multiple plots in parallel and an interactive UI.
+License: UofA + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    sf,
+    sp,
+    automap,
+    tidyverse,
+    msigdbr,
+    ExperimentHub,
+    GSEABase,
+    plot3D,
+    RColorBrewer,
+    ggplot2,
+    rgl,
+    magick,
+    plotly,
+    waddR,
+    SingleCellExperiment,
+    BiocFileCache
