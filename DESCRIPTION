@@ -32,4 +32,4 @@ Imports:
     plotly,
     waddR,
     SingleCellExperiment,
-    BiocFileCache
+    BiocFileCache,
