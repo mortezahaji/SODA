@@ -29,7 +29,11 @@ Hajihosseini M, Amini P, Voicu D, Dinu I, Pyne S. Geostatistical Modeling and He
 Goovaerts, P. (2000). Geostatistical approaches for incorporating elevation into the spatial interpolation of rainfall. Journal of hydrology, 228(1-2), 113-129.
 }
 \author{
-Morteza Hajihosseini
+Morteza Hajihosseini \cr
+Payam Amini \cr
+Dan Voicu \cr
+Irina Dinu \cr
+Saumyadipta Pyne
 }
 
 \examples{
