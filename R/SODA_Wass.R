@@ -1,5 +1,5 @@
 
-SODA_Wass=function(Data1,Data2,Cor,BM,cutoff,Q,Method=c("TS","OS"))
+SODA_Wass=function(Data1,Data2,Cor,BM,cutoff,Rad,Method=c("TS","OS"))
 {
 
 suppressPackageStartupMessages({
@@ -27,7 +27,7 @@ Cell=c()
 			{
 				dx = abs(Data1[SCell[i],1]-Cor[j,3])
 				dy = abs(Data1[SCell[i],2]-Cor[j,4])
-				R =Q
+				R =Rad
 					if (dx^2 + dy^2 <= R^2)
 					{
 						LCel=c(LCel,j)
