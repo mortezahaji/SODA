@@ -27,7 +27,11 @@ Hajihosseini M, Amini P, Voicu D, Dinu I, Pyne S. Geostatistical Modeling and He
 
 }
 \author{
-Morteza Hajihosseini
+Morteza Hajihosseini \cr
+Payam Amini \cr
+Dan Voicu \cr
+Irina Dinu \cr
+Saumyadipta Pyne
 }
 
 \examples{
