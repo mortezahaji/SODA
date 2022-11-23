@@ -25,8 +25,8 @@ Expand and Margin will be used in the "expand.grid" function. For example:
 A dataframe contains interpolated data with coordinates of the points.
 }
 \references{
-Hajihosseini M, Amini P, Voicu D, Dinu I, Pyne S. Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape. Cancers. 2022; 14(21):5235. https://doi.org/10.3390/cancers14215235
-\Goovaerts, P. (2000). Geostatistical approaches for incorporating elevation into the spatial interpolation of rainfall. Journal of hydrology, 228(1-2), 113-129.
+Hajihosseini M, Amini P, Voicu D, Dinu I, Pyne S. Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape. Cancers. 2022; 14(21):5235. https://doi.org/10.3390/cancers1421523 \cr
+Goovaerts, P. (2000). Geostatistical approaches for incorporating elevation into the spatial interpolation of rainfall. Journal of hydrology, 228(1-2), 113-129.
 }
 \author{
 Morteza Hajihosseini
