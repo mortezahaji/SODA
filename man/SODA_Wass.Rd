@@ -43,7 +43,6 @@ Saumyadipta Pyne
 
 \examples{
 #Based on the “TS” for the two-stage method
-
 Result1=SODA_Wass(Data1=Intrp_Data,Data2=Data2,Cor=Coor2,
 			BM="S100A10",cutoff=1,Q=55.33,Method="TS")
 
