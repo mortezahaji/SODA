@@ -29,11 +29,16 @@ SODA_Wass(Data1,Data2,Cor,BM,cutoff,Q,Method=c("TS","OS"))
   Adjusted_Pvalue is an ordered adjusted p_value according to the method of Benjamini-Hochberg.
 }
 \references{
-Hajihosseini M, Amini P, Voicu D, Dinu I, Pyne S. Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape. Cancers. 2022; 14(21):5235. https://doi.org/10.3390/cancers14215235
-
+Hajihosseini M, Amini P, Voicu D, Dinu I, Pyne S. Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape. Cancers. 2022; 14(21):5235. https://doi.org/10.3390/cancers14215235 \cr
+Amini, P., Hajihosseini, M., Pyne, S., & Dinu, I. (2022). Geographically Weighted Linear Combination Test for Gene Set Analysis of a Continuous Spatial Phenotype as applied to Intratumor Heterogeneity. bioRxiv. \cr
+Ramdas, A., García Trillos, N., & Cuturi, M. (2017). On wasserstein two-sample testing and related families of nonparametric tests. Entropy, 19(2), 47.
 }
 \author{
-Morteza Hajihosseini
+Morteza Hajihosseini \cr
+Payam Amini \cr
+Dan Voicu \cr
+Irina Dinu \cr
+Saumyadipta Pyne
 }
 
 \examples{
