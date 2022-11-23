@@ -23,6 +23,6 @@ Amini, P., Hajihosseini, M., Pyne, S., & Dinu, I. (2022). Geographically Weighte
 }
 \examples{
 data(SODA_Data)
-
+View(SODA_Data)
 }
 \keyword{datasets}
