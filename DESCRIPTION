@@ -3,7 +3,7 @@ Type: Package
 Title: Spatial Omic Data Analysis (SODA) using Interdisciplinary Approaches
 Version: 0.1.0
 Author: Morteza Hajihosseini
-Maintainer: mortezah@stanford.edu
+Maintainer: Morteza Hajihosseini <mhajihos@ualberta.ca>
 Description: SODA is an R package designed to facilitate differentially expressed gene and
     heterogeneity analysis of tumor molecular landscape for
     spatial transcriptomics data by providing interactive visualizations that
