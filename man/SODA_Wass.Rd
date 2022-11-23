@@ -18,7 +18,7 @@ SODA_Wass(Data1,Data2,Cor,BM,cutoff,Q,Method=c("TS","OS"))
   \item{BM}{ The name of a specific biomarker}
   \item{cutoff}{  The threshold for the biomarker z-score that defines local and non-local cells.}
   \item{Q}{ The radious of the distance from the biomarker that defines the local and non-local areas.}
-  \item{Method}{ The 2-Wasserstein distance test method, more details: \link{pck=waddR, fun=wasserstein.sc} }
+  \item{Method}{ The 2-Wasserstein distance test method, more details: \code{\link{waddR,wasserstein.sc}}}
 }
 
 \value{
