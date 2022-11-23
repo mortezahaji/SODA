@@ -8,7 +8,7 @@ Spatial Differentially Expressed Gene Analysis Using 2-Wasserstein Distance Test
 This function performes spatial differentially expressed gene test between the cells located in the area with upper than the expressed threshold for a specific biomarker (local cells) and cells located in other locations of the cell (Non-local cells).
 }
 \usage{
-SODA_Wass(Data1,Data2,Cor,BM,cutoff,Q,Method=c("TS","OS"))
+SODA_Wass(Data1,Data2,Cor,BM,cutoff,Rad,Method=c("TS","OS"))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,7 +17,7 @@ SODA_Wass(Data1,Data2,Cor,BM,cutoff,Q,Method=c("TS","OS"))
   \item{Cor}{  A data frame contains coordinates of the actual cells with samples in the rows and X and Y in the columns.}
   \item{BM}{ The name of a specific biomarker}
   \item{cutoff}{  The threshold for the biomarker z-score that defines local and non-local cells.}
-  \item{Q}{ The radious of the distance from the biomarker that defines the local and non-local areas.}
+  \item{Rad}{ The radious of the distance from the biomarker that defines the local and non-local areas.}
   \item{Method}{ The 2-Wasserstein distance test method, more details: \code{\link{wasserstein.sc}}}
 }
 
@@ -44,11 +44,11 @@ Saumyadipta Pyne
 \examples{
 #Based on the “TS” for the two-stage method
 Result1=SODA_Wass(Data1=Intrp_Data,Data2=Data2,Cor=Coor2,
-			BM="S100A10",cutoff=1,Q=55.33,Method="TS")
+			BM="S100A10",cutoff=1,Rad=55.33,Method="TS")
 
 #Based on the “OS” for the one-stage method
 Result1=SODA_Wass(Data1=Intrp_Data,Data2=Data2,Cor=Coor2,
-			BM="S100A10",cutoff=1,Q=55.33,Method="OS")
+			BM="S100A10",cutoff=1,Rad=55.33,Method="OS")
 
 }
 
