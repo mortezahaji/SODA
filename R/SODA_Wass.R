@@ -26,7 +26,7 @@ Cell=c()
 	for(i in 1:length(SCell))
 	{
 		
-		for(j in 1:dim(Cor)[1])
+		for(j in 1:dim(Coord)[1])
 			{
 				dx = abs(Data1[SCell[i],1]-Coord[j,1])
 				dy = abs(Data1[SCell[i],2]-Coord[j,2])
