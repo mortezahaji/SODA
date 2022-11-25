@@ -10,6 +10,7 @@ suppressPackageStartupMessages({
 
 Coord=data.frame(Data2[,X],Data2[,Y])
 names(Coord)=c(X,Y)
+rownames(Coord)=rownames(Data2)
 Data2=Data2[,!(names(Data2) %in% c(X,Y))]
 
 ColN=dim(Data2)[2]
