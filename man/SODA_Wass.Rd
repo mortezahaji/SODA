@@ -61,10 +61,11 @@ Rad=Q[2]
 #Based on the “TS” for the two-stage method
 Result1=SODA_Wass(Data1=Intrp_Data,Data2=SODA_Data,X="Longitude",Y="Latitude",
 			BM="S100A10",cutoff=1,Rad=55.33,Method="TS")
-
+head(Result1)
+	
 #Based on the “OS” for the one-stage method
 Result1=SODA_Wass(Data1=Intrp_Data,Data2=SODA_Data,X="Longitude",Y="Latitude",
 			BM="S100A10",cutoff=1,Rad=55.33,Method="OS")
-
+head(Result1)
 }
 
