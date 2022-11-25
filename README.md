@@ -21,7 +21,7 @@ require(SODA)
 ?SODA_Pathway
 
 ```
-### Data
+### SODA_Data
 ```
 ?SODA_Data
 data(SODA_Data)
