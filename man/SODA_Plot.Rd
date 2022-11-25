@@ -36,6 +36,12 @@ Saumyadipta Pyne
 }
 
 \examples{
+#Data
+data(SODA_Data)
+View(SODA_Data)
+
+Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Margin=10)
+
 #For 2D Plot
 SODA_Plot(Data=Intrp_Data,Var="S100A10",X="Longitude",Y="Latitude",Type="2D")
 
