@@ -14,8 +14,8 @@ SODA_Wass(Data1,Data2,X=,Y=,BM,cutoff,Rad,Method=c("TS","OS"))
 \arguments{
   \item{Data1}{  A data frame contains interpolated data, output of \code{\link{SODA_Kriging}}}
   \item{Data2}{  A data frame contains gene expression data with samples in the rows and genes in the columns.}
-  \item{X}{Name of the variable that indicate the longitude of the cells in quotation. For example X="Longitude".}
-  \item{Y}{Names of the variable that indicates the latitude of the cells in quotation. For example X="Latitude".}
+  \item{X}{Name of the variable that indicate the longitude of the cells in Data2 in quotation. For example X="Longitude".}
+  \item{Y}{Names of the variable that indicates the latitude of the cells in Data2 in quotation. For example X="Latitude".}
   \item{BM}{ The name of a specific biomarker}
   \item{cutoff}{  The threshold for the biomarker z-score that defines local and non-local cells.}
   \item{Rad}{ The radious of the distance from the biomarker that defines the local and non-local areas.}
