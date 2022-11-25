@@ -47,6 +47,15 @@ Saumyadipta Pyne
 data(SODA_Data)
 View(SODA_Data)
 Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Margin=10)	
+
+#Rad
+pts <- SpatialPoints(Coor2[,c(3,4)])
+# longlat = FALSE returns Euclidean distance
+euclidDist <- sp::spDists(pts,longlat = FALSE)
+Distance=ecdf(euclidDist)
+X=data.frame(Dist=euclidDist[upper.tri(euclidDist, diag = FALSE)])
+Q=quantile(X[,1],names = TRUE,seq(0,1,0.05))
+Q
 	
 #Based on the “TS” for the two-stage method
 Result1=SODA_Wass(Data1=Intrp_Data,Data2=SODA_Data,X="Longitude",Y="Latitude",
