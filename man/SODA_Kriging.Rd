@@ -14,7 +14,7 @@ SODA_Kriging (Data,X,Y,Expand,Margin)
   \item{Data}{ A dataframe conaints samples in rows, genes in coloums with longitude and latitude of cells as extra columns.}
   \item{X}{Name of the variable that indicate the longitude of the cells in quotation. For example X="Longitude".}
   \item{Y}{Names of the variable that indicates the latitude of the cells in quotation. For example X="Latitude".}
-  \item{Expand}{An integer indicating how much expansion is needed from the original coordinates, see example below.}
+  \item{Expand}{An integer indicating how much expansion is needed from the original coordinates, see example below. Expand value will be used for both X and Y. Therefore Expand^2 should be always more than the number of samples. For example: when the number of samples is 1000, Expand=35 generates 35*35=1225 grid points which is more than the number of samples 1000.}
   \item{Margin}{An integer indicating how much margin need to be added to the X and Y, see example below.}
 }
 \details{
