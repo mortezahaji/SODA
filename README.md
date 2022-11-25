@@ -13,11 +13,42 @@ The package is built around a shiny "gadget" to allow the exploration of the dat
 devtools::install_github("mortezahaji/SODA")
 require(SODA)
 
-#Functions
+#Functions & Data
+?SODA_Data
 ?SODA_Kriging
 ?SODA_Plot
 ?SODA_Wass
 ?SODA_Pathway
+
+
+```
+### Data
+```
 ?SODA_Data
+data(SODA_Data)
+View(SODA_Data)
+
+```
+### SODA_Kriging (Data,X,Y,Expand,Margin)
+```
+?SODA_Kriging
+
+```
+
+### SODA_Plot (Data,Var,X,Y,Type=c("3D","2D","Interactive"),Res=500)
+```
+?SODA_Plot
+
+```
+
+### SODA_Wass(Data1,Data2,X=,Y=,BM,cutoff,Rad,Method=c("TS","OS"))
+```
+?SODA_Wass
+
+```
+
+### SODA_Pathway (Data,Pathway,Type=c("3D","2D","Interactive"))
+```
+?SODA_Pathway
 
 ```
