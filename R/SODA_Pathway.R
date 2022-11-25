@@ -19,7 +19,8 @@ pathwaysH = split(x = msigdbr_df$gene_symbol, f = msigdbr_df$gs_name)
 set=unique(unlist(pathwaysH[[Pathway]]))
 Nset=length(which(set %in% Gnames))
 
-Pathway_Score=data.frame(rowSums(Data[colnames(Data) %in% set],na.rm=TRUE))
+Pathway_Score=data.frame(rowSums(Data[colnames(Data) %in% set]/sqrt(length(Nset))
+,na.rm=TRUE))
 names(Pathway_Score)=Pathway
 
 Data_Plot=data.frame(Data,Pathway_Score)
