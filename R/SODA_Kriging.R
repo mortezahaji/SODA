@@ -46,7 +46,7 @@ i=i+1
 
 }
 
-Intrp2=data.frame(Longitude=Data[,X],Latitude=Data[,Y],Intrp)
+Intrp2=data.frame(Longitude=my_mesh$Longitude,Latitude=my_mesh$Latitude,Intrp)
 return(Intrp2)
 
 }
