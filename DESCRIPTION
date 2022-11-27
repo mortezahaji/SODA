@@ -8,6 +8,7 @@ Description: SODA is an R package designed to facilitate differentially expresse
 License: UofA + file LICENSE
 Encoding: UTF-8
 LazyData: true
+biocViews:
 Imports:
     sf,
     sp,
