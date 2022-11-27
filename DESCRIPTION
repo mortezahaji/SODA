@@ -28,4 +28,3 @@ Imports:
     BiocFileCache,
     SpatEntropy,
     spatstat,
-    BiocViews,
