@@ -25,3 +25,5 @@ Imports:
     waddR,
     SingleCellExperiment,
     BiocFileCache,
+    SpatEntropy,
+    spatstat,
