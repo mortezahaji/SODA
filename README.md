@@ -55,7 +55,7 @@ SODA_Plot(Data=Intrp_Data,Var="S100A10",X="Longitude",Y="Latitude",Type="3D")
 SODA_Plot(Data=Intrp_Data,Var="S100A10",X="Longitude",Y="Latitude",Type="Interactive")
 ```
 
-### SODA_Wass(Data1,Data2,X=,Y=,BM,cutoff,Rad,Method=c("TS","OS"))
+### SODA_Wass(Data1,Data2,X,Y,BM,cutoff,Rad,Method=c("TS","OS"))
 ```
 ?SODA_Wass
 #Data
