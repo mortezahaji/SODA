@@ -9,7 +9,7 @@ The package is built around a shiny "gadget" to allow the exploration of the dat
 
 ## Installation
 ```
-# install.packages("devtools")
+install.packages("devtools")
 devtools::install_github("mortezahaji/SODA")
 require(SODA)
 
