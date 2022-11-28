@@ -22,6 +22,7 @@ require(SODA)
 
 ```
 ### SODA_Data
+## This dataset contains a subset of the Human Breast Cancer data we used in our recent publications [listed at the end of this page] downloaded from 10x Genomics online resource.
 ```
 ?SODA_Data
 data(SODA_Data)
