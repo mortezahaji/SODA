@@ -19,6 +19,7 @@ require(SODA)
 ?SODA_Plot
 ?SODA_Wass
 ?SODA_Pathway
+?SODA_Entrp
 
 ```
 ### SODA_Data
