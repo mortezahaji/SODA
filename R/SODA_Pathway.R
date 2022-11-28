@@ -26,13 +26,13 @@ names(Pathway_Score)=Pathway
 Data_Plot=data.frame(Data,Pathway_Score)
 
 if(Type=="3D"){
-SODA_Plot(Data=Data_Plot,Var=Pathway,X="Longitude",Y="Latitude",Type="3D")
+SODA_Plot(Data=Data_Plot,BM=Pathway,X="Longitude",Y="Latitude",Type="3D")
 
 }else if(Type=="2D"){
-SODA_Plot(Data=Data_Plot,Var=Pathway,X="Longitude",Y="Latitude",Type="2D")
+SODA_Plot(Data=Data_Plot,BM=Pathway,X="Longitude",Y="Latitude",Type="2D")
 
 }else if(Type=="Interactive"){
-SODA_Plot(Data=Data_Plot,Var=Pathway,X="Longitude",Y="Latitude",Type="Interactive")
+SODA_Plot(Data=Data_Plot,BM=Pathway,X="Longitude",Y="Latitude",Type="Interactive")
 }
 
 }
