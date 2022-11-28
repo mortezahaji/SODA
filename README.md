@@ -99,3 +99,7 @@ SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="3D
 #For Interactive Plot
 SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="Interactive")
 ```
+
+## Useful Links
+[Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape](https://www.mdpi.com/2072-6694/14/21/5235)\
+[Geographically Weighted Linear Combination Test for Gene Set Analysis of a Continuous Spatial Phenotype as applied to Intratumor Heterogeneity](https://www.biorxiv.org/content/10.1101/2022.10.09.511477v1.abstract)
