@@ -34,3 +34,4 @@ Imports:
     spatstat,
     doBy,
     ggpubr,
+    spatstat.core,
