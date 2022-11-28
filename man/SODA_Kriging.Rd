@@ -4,7 +4,7 @@
 Interpolation Using Ordinary Kriging
 }
 \description{
-This function makes the interpolated dataset using Ordinary Kriging method
+This function generates the interpolated dataset using Ordinary Kriging method
 }
 \usage{
 SODA_Kriging (Data,X,Y,Expand,Margin)
