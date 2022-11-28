@@ -30,6 +30,7 @@ View(SODA_Data)
 
 ```
 ### SODA_Kriging (Data,X,Y,Expand,Margin)
+#### This function generates the interpolated dataset using Ordinary Kriging method.
 ```
 ?SODA_Kriging
 data(SODA_Data)
@@ -38,6 +39,7 @@ Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Mar
 ```
 
 ### SODA_Plot (Data,Var,X,Y,Type=c("3D","2D","Interactive"),Res=500)
+#### This function generates 2D, 3D, and interactive plots based on the interpolated data.
 ```
 ?SODA_Plot
 #Data
@@ -57,6 +59,7 @@ SODA_Plot(Data=Intrp_Data,Var="S100A10",X="Longitude",Y="Latitude",Type="Interac
 ```
 
 ### SODA_Wass(Data1,Data2,X,Y,BM,cutoff,Rad,Method=c("TS","OS"))
+#### This function performes spatial differentially expressed gene test between the cells located in the area with upper than the expressed threshold for a specific biomarker (local cells) and cells located in other locations of the cell (Non-local cells).
 ```
 ?SODA_Wass
 #Data
