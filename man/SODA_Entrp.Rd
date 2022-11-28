@@ -15,10 +15,10 @@ SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part)
   \item{Data}{  A data frame contains interpolated data, output of \code{\link{SODA_Kriging}}}
   \item{X}{Name of the variable that indicate the longitude of the cells in quotation. For example X="Longitude".}
   \item{Y}{Names of the variable that indicates the latitude of the cells in quotation. For example X="Latitude".}
-  \item{BM}{ The name of a specific biomarker. It is NULL when "Pathway"" specified.}
-  \item{Pathway}{  The names of the hallmark in MSigDB in quotation. It is NULL when "BM"" specified. For example Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY".}
+  \item{BM}{ The name of a specific biomarker. It is NULL when "Pathway" specified.}
+  \item{Pathway}{  The names of the hallmark in MSigDB in quotation. It is NULL when "BM" specified. For example Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY".}
   \item{cutoff}{  The threshold for the biomarker or geneset z-score that defines over-expressed and under-expressed areas.}
-  \item{Part}{ A number or a sequence of numbers indicating the number of partitions for Batty's Entropy index.}
+  \item{Part}{ A number or a sequence of numbers indicating the number of partitions for Battys Entropy index.}
 }
 
 \value{
@@ -29,7 +29,7 @@ SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part)
   4. The median of entropy index over permutations \cr
   Two graphs:\cr
   1. Showing the distribution of the over-expressed and under-expressed points\cr
-  2. Showing the results of Batty's Entropy index for various number of partitions over 1000 permutaions
+  2. Showing the results of Battys Entropy index for various number of partitions over 1000 permutaions
 }
 \references{
 Hajihosseini, M., Amini, P., Voicu, D., Dinu, I., & Pyne, S. (2022). Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape. Cancers, 14(21), 5235. \cr
