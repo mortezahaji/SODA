@@ -33,3 +33,4 @@ Imports:
     SpatEntropy,
     spatstat,
     doBy,
+    ggpubr,
