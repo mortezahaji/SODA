@@ -56,7 +56,7 @@ Distance=ecdf(euclidDist)
 X=data.frame(Dist=euclidDist[upper.tri(euclidDist, diag = FALSE)])
 Q=quantile(X[,1],names = TRUE,seq(0,1,0.05))
 Q
-#Q[2]=55.33
+#Q[2] is 55.33
 	
 #Based on the “TS” for the two-stage method
 Result1=SODA_Wass(Data1=Intrp_Data,Data2=SODA_Data,X="Longitude",Y="Latitude",
