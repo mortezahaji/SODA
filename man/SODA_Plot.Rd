@@ -13,6 +13,7 @@ SODA_Plot (Data,BM,X,Y,Type=c("3D","2D","Interactive"),Res=500)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{Data}{  A data frame contains interpolated data, output of \code{\link{SODA_Kriging}}}
+  \item{BM}{ The name of a specific biomarker}
   \item{X}{  Name of the variable that indicate the longitude of the points in the interpolated data in quotation. For example X="Longitude".}
   \item{Y}{  Names of the variable that indicates the latitude of the points in the interpolated data in quotation. For example X="Latitude".}
   \item{Type}{ Type of the plot could be 2D, 3D, or interactive using plotly package.}
