@@ -32,3 +32,4 @@ Imports:
     BiocFileCache,
     SpatEntropy,
     spatstat,
+    doBy,
