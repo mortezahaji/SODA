@@ -59,7 +59,7 @@ SODA_Plot(Data=Intrp_Data,Var="S100A10",X="Longitude",Y="Latitude",Type="Interac
 ```
 
 ### SODA_Wass(Data1,Data2,X,Y,BM,cutoff,Rad,Method=c("TS","OS"))
-#### This function performes spatial differentially expressed gene test between the cells located in the area with upper than the expressed threshold for a specific biomarker (local cells) and cells located in other locations of the cell (Non-local cells).
+#### This function performes spatial differentially expressed gene (DEG) analysis between the cells located in the area with upper than the expressed threshold for a specific biomarker (local cells) and cells located in other locations of the cell (Non-local cells).
 ```
 ?SODA_Wass
 #Data
