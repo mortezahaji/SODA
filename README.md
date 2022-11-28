@@ -106,6 +106,24 @@ SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="3D
 SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="Interactive")
 ```
 
+### SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part)
+#### This function calculates Batty's Entropy index for various number of partitions for a biomarker or a geneset.
+```
+?SODA_Entrp
+#Data
+data(SODA_Data)
+View(SODA_Data)
+Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Margin=10)	
+
+#For a Biomarker
+SODA_Entrp(Data=Intrp_Data,X="Longitude",Y="Latitude",
+				BM="S100A10",Pathway=NULL,cutoff=1.5,Part=2:10)
+
+#For a Gene Set
+SODA_Entrp(Data=Intrp_Data,X="Longitude",Y="Latitude",
+				BM=NULL,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",cutoff=1.5,Part=2:10)
+```
+
 ## Useful Links
 [Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape](https://www.mdpi.com/2072-6694/14/21/5235)\
 [Geographically Weighted Linear Combination Test for Gene Set Analysis of a Continuous Spatial Phenotype as applied to Intratumor Heterogeneity](https://www.biorxiv.org/content/10.1101/2022.10.09.511477v1.abstract)
