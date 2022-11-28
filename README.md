@@ -87,6 +87,7 @@ Result1=SODA_Wass(Data1=Intrp_Data,Data2=SODA_Data,X="Longitude",Y="Latitude",
 ```
 
 ### SODA_Pathway (Data,Pathway,Type=c("3D","2D","Interactive"))
+#### This function finds the list of the genes in human hallmarks from the Molecular Signatures Database (MSigDB) and displays the distribution of human hallmarks over the interpolated coordinates.
 ```
 ?SODA_Pathway
 #Data
