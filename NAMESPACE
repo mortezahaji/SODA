@@ -5,4 +5,4 @@ export(SODA_Pathway)
 export(SODA_Plot)
 export(SODA_Wass)
 export(SODA_Entrp)
-
+export(SODA_GWLCT)
