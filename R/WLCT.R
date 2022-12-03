@@ -25,7 +25,7 @@ T2.like.SAMGS <- function(DATA, cl){
   sum(cl.DATA^2)
 }
 
-   WLCT <- function(GS, DATA, cl,weight, nbPermutations, silent=FALSE){
+   WLCT <- function(GS, DATA, cl,weight, nbPermutations){
 
   genes <- rownames(DATA)       # gene names of the microarray data 
   nb.Samples  <- ncol(DATA)     # nb of samples
