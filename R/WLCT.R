@@ -48,7 +48,7 @@ T2.like.SAMGS <- function(DATA, cl){
     
     # (2) Eigen-decomposition of shrinkage pooled covariance matrix for each GS
     
-    Cov.Pooled<-lapply(GS.data, function(z) cov.shrink(z,verbose=FALSE, lambda.var=0,w=ww));
+    Cov.Pooled<-lapply(GS.data, function(z) cov.shrink(z,verbose=FALSE, lambda.var=0,w=weight));
     # pooled covariance of genes in each GS
     for (i in 1:nb.GeneSets){
       EIGEN.decom<-eigen(Cov.Pooled[[i]]);
