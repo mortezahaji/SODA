@@ -1,6 +1,6 @@
 
 
-GWLCT <- function(Data=Intrp_Data,X="Longitude",Y="Latitude",ovrp=0.20,
+SODA_GWLCT <- function(Data=Intrp_Data,X="Longitude",Y="Latitude",ovrp=0.20,
 		BM="COL10A1",kernel="Bisquare",method="adaptive",
 		bw=7,pthres=0.05,qthres=0.001,nbPermutations=500)
 {
