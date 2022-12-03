@@ -2,7 +2,7 @@
 
 GWLCT <- function(Data=Intrp_Data,X="Longitude",Y="Latitude",ovrp=0.20,
 		BM="COL10A1",kernel="Bisquare",method="adaptive",
-		bw=7,pthres=0.05,qthres=0.001,nbPermutations=500,silent=FALSE)
+		bw=7,pthres=0.05,qthres=0.001,nbPermutations=500)
 {
 
 suppressPackageStartupMessages({
@@ -87,7 +87,7 @@ GS=as.data.frame(GS2)
   }
   
   
-  LCT_Global<-WLCT(GS,DATA ,cl,weight=rep(1/nb.Samples,nb.Samples), nbPermutations=1000, silent=FALSE)
+  LCT_Global<-WLCT(GS,DATA ,cl,weight=rep(1/nb.Samples,nb.Samples), nbPermutations=1000)
   
   
   for(m in 1:nb.Samples){
@@ -112,7 +112,7 @@ GS=as.data.frame(GS2)
       Wts<-(1-(as.vector(unlist(SubSet1[ngenes+1,]))/Kernel_H)^3)^3
     }
     
-    LCTmodel=WLCT(GS,DATA1 ,cl1,weight=Wts, nbPermutations=nbPermutations, silent=FALSE)
+    LCTmodel=WLCT(GS,DATA1 ,cl1,weight=Wts, nbPermutations=nbPermutations)
     
     #Store in table
     Z1[,1,m]=rep(m,nb.GeneSets)
