@@ -39,5 +39,6 @@ Imports:
     dplyr,
     corpcor,
     qvcalc,
+    qvalue,
     stringr,
     MAVTgsa,
