@@ -16,6 +16,7 @@ require(msigdbr)
 require(ExperimentHub)
 require(GSEABase)
 require(qvalue)
+require(plotly)
 })
 
 cl=Data[,BM]
