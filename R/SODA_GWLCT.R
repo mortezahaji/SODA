@@ -150,7 +150,7 @@ figq <- figq %>% layout(title=paste("Geneset"),
                         scene = list(xaxis = list(title = 'Longitude'),
                                      yaxis = list(title = 'Latitude'),
                                      zaxis = list(title ="No.GeneSets")))
-figq
+print(figq)
   
   
   return(list("LCT"=LCT_Global, "GWLCT"=Zp1))  
