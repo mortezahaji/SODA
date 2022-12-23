@@ -1,6 +1,6 @@
 # SODA
 ## Overview
-SODA is an R package designed to facilitate differentially expressed gene and heterogeneity analysis of tumor molecular landscape for spatial transcriptomics data 
+Spatial Omics Data Analysis (SODA) is an R package designed to facilitate differentially expressed gene and heterogeneity analysis of tumor molecular landscape for spatial transcriptomics data 
 by providing interactive visualizations that display the synthesize high-resolution and continuous gene expression landscapes of a given tumor sample
 and integration of such landscapes to identify and map the enriched regions of the pathways of interest with identification of genes
 that have a spatial differential expression at locations representing specific phenotypic contexts.
