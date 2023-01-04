@@ -1,6 +1,6 @@
 
 
-SODA_Pathway=function(Data,Pathway,Type=c("3D","2D","Interactive"))
+SODA_Pathway=function(Data,Pathway,Type=c("3D","2D","Interactive"),species,category)
 {
 
 suppressPackageStartupMessages({
@@ -13,7 +13,7 @@ require(GSEABase)
 Gnames=colnames(Data)
 
 #Retrieve human H (hallmark) gene set
-msigdbr_df <- msigdbr(species = "human", category = "H")
+msigdbr_df <- msigdbr(species = species, category = category)
 pathwaysH = split(x = msigdbr_df$gene_symbol, f = msigdbr_df$gs_name)
 
 set=unique(unlist(pathwaysH[[Pathway]]))
@@ -36,4 +36,3 @@ SODA_Plot(Data=Data_Plot,BM=Pathway,X="Longitude",Y="Latitude",Type="Interactive
 }
 
 }
-
