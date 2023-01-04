@@ -8,13 +8,15 @@ Ditribution of Human Hallmarks Over the Interpolated Coordinates
 This function finds the list of the genes in human hallmarks from the Molecular Signatures Database (MSigDB) and displays the distribution of human hallmarks over the interpolated coordinates
 }
 \usage{
-SODA_Pathway (Data,Pathway,Type=c("3D","2D","Interactive"))
+SODA_Pathway (Data,Pathway,Type=c("3D","2D","Interactive"),species,category)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{Data}{  A data frame contains interpolated data, output of \code{\link{SODA_Kriging}}}
   \item{Pathway}{  The names of the hallmark in MSigDB in quotation. For example Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY".}
   \item{Type}{  Type of the plot could be 2D, 3D, or interactive using plotly package.}
+  \item{species}{  Species name based on MSigDB such as Homo sapiens for human and mouse for mouse .}
+  \item{category}{  MSigDB collection abbreviation, such as H for hallmark or C1 to C8.}
 }
 
 \value{
@@ -41,13 +43,13 @@ View(SODA_Data)
 Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Margin=10)
   
 #For 2D Plot
-SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="2D")
+SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="2D",species = "Human", category = "H")
 
 #For 3D Plot
-SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="3D")
+SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="3D",species = "Human", category = "H")
 
 #For Interactive Plot
-SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="Interactive")
+SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="Interactive",species = "Human", category = "H")
 
 }
 
