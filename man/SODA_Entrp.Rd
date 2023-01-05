@@ -8,7 +8,7 @@ This function calculates Battys Entropy index for various number of partitions f
 This function calculates Battys Entropy index and generates a table and two figures
 }
 \usage{
-SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part)
+SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,species,category,cutoff,Part)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,6 +17,8 @@ SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part)
   \item{Y}{Names of the variable that indicates the latitude of the cells in quotation. For example X="Latitude".}
   \item{BM}{ The name of a specific biomarker. It is NULL when "Pathway" specified.}
   \item{Pathway}{  The names of the hallmark in MSigDB in quotation. It is NULL when "BM" specified. For example Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY".}
+  \item{species}{  Species name based on MSigDB such as Homo sapiens for human and mouse for mouse .}
+  \item{category}{  MSigDB collection abbreviation, such as H for hallmark or C1 to C8.}
   \item{cutoff}{  The threshold for the biomarker or geneset z-score that defines over-expressed and under-expressed areas.}
   \item{Part}{ A number or a sequence of numbers indicating the number of partitions for Battys Entropy index.}
 }
@@ -57,7 +59,8 @@ SODA_Entrp(Data=Intrp_Data,X="Longitude",Y="Latitude",
 
 #For a Gene Set
 SODA_Entrp(Data=Intrp_Data,X="Longitude",Y="Latitude",
-				BM=NULL,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",cutoff=1.5,Part=2:10)
+				BM=NULL,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",
+	   			species = "Human", category = "H",cutoff=1.5,Part=2:10)
 
 }
 
