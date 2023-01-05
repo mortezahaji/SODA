@@ -97,13 +97,13 @@ View(SODA_Data)
 Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Margin=10)	
 
 #For 2D Plot
-SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="2D")
+SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="2D",species = "Human", category = "H")
 
 #For 3D Plot
-SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="3D")
+SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="3D",species = "Human", category = "H")
 
 #For Interactive Plot
-SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="Interactive")
+SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="Interactive",species = "Human", category = "H")
 ```
 
 ### SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part)
@@ -121,7 +121,8 @@ SODA_Entrp(Data=Intrp_Data,X="Longitude",Y="Latitude",
 
 #For a Gene Set
 SODA_Entrp(Data=Intrp_Data,X="Longitude",Y="Latitude",
-				BM=NULL,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",cutoff=1.5,Part=2:10)
+				BM=NULL,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",
+				species = "Human", category = "H",cutoff=1.5,Part=2:10)
 ```
 
 ## Useful Links
