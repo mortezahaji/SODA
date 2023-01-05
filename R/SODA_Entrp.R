@@ -1,5 +1,5 @@
 
-SODA_Entrp=function(Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part)
+SODA_Entrp=function(Data,X,Y,BM=NULL,Pathway=NULL,species,category,cutoff,Part)
 {
 
 suppressPackageStartupMessages({
@@ -74,7 +74,7 @@ return(Entrp)
 
 Gnames=colnames(Data)
 #Retrieve human H (hallmark) gene set
-msigdbr_df <- msigdbr(species = "human", category = "H")
+msigdbr_df <- msigdbr(species = species, category = category)
 pathwaysH = split(x = msigdbr_df$gene_symbol, f = msigdbr_df$gs_name)
 
 set=unique(unlist(pathwaysH[[Pathway]]))
