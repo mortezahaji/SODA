@@ -87,14 +87,14 @@ Result1=SODA_Wass(Data1=Intrp_Data,Data2=SODA_Data,X="Longitude",Y="Latitude",
 			BM="S100A10",cutoff=1,Rad=55.33,Method="OS")
 ```
 
-### SODA_Pathway (Data,Pathway,Type=c("3D","2D","Interactive"))
+### SODA_Pathway (Data,Pathway,Type=c("3D","2D","Interactive"),species,category)
 #### This function finds the list of the genes in human hallmarks from the Molecular Signatures Database (MSigDB) and displays the distribution of human hallmarks over the interpolated coordinates.
 ```
 ?SODA_Pathway
 #Data
 data(SODA_Data)
 View(SODA_Data)
-Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Margin=10)	
+Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Margin=10,species,category)	
 
 #For 2D Plot
 SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="2D",species = "Human", category = "H")
@@ -106,7 +106,7 @@ SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="3D
 SODA_Pathway(Data=Intrp_Data,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",Type="Interactive",species = "Human", category = "H")
 ```
 
-### SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part)
+### SODA_Entrp (Data,X,Y,BM=NULL,Pathway=NULL,cutoff,Part,species, category)
 #### This function calculates Batty's Entropy index for various number of partitions for a biomarker or a geneset.
 ```
 ?SODA_Entrp
