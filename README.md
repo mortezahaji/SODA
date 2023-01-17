@@ -124,6 +124,9 @@ SODA_Entrp(Data=Intrp_Data,X="Longitude",Y="Latitude",
 				BM=NULL,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",
 				species = "Human", category = "H",cutoff=1.5,Part=2:10)
 ```
+###SODA_GWLCT(Data,X,Y,ovrp,BM,kernel=c("Bisquare","Tricube"),method=c("adaptive","fixed"),bw,pthres,qthres,nbPermutations)
+####
+
 
 ## Useful Links
 [Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape](https://www.mdpi.com/2072-6694/14/21/5235)\
