@@ -124,9 +124,20 @@ SODA_Entrp(Data=Intrp_Data,X="Longitude",Y="Latitude",
 				BM=NULL,Pathway="HALLMARK_ESTROGEN_RESPONSE_EARLY",
 				species = "Human", category = "H",cutoff=1.5,Part=2:10)
 ```
-###SODA_GWLCT(Data,X,Y,ovrp,BM,kernel=c("Bisquare","Tricube"),method=c("adaptive","fixed"),bw,pthres,qthres,nbPermutations)
-####
+### SODA_GWLCT(Data,X,Y,ovrp,BM,kernel=c("Bisquare","Tricube"),method=c("adaptive","fixed"),bw,pthres,qthres,nbPermutations)
+#### This function performs the geographically weighted linear combination test at the pathway level
+```
+?SODA_GWLCT
+#Data
+data(SODA_Data)
+View(SODA_Data)
+Intrp_Data=SODA_Kriging (Data=SODA_Data,X="Longitude",Y="Latitude",Expand=35,Margin=10)
 
+Result=SODA_GWLCT(Data=Intrp_Data,X="Longitude",Y="Latitude",Ovrp=0.20,
+		BM="COL10A1",kernel="Bisquare",method="adaptive",
+		bw=7,pthres=0.05,qthres=0.001,nbPermutations=1000)
+
+``` 
 
 ## Useful Links
 [Geostatistical Modeling and Heterogeneity Analysis of Tumor Molecular Landscape](https://www.mdpi.com/2072-6694/14/21/5235)\
