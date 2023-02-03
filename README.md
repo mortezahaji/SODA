@@ -5,7 +5,6 @@ by providing interactive visualizations that display the synthesize high-resolut
 and integration of such landscapes to identify and map the enriched regions of the pathways of interest with identification of genes
 that have a spatial differential expression at locations representing specific phenotypic contexts.
 An important feature of SODA is the computation of spatial entropy measures for quantification and objective characterization of intratumor heterogeneity. 
-The package is built around a shiny "gadget" to allow the exploration of the data with multiple plots in parallel and an interactive UI.
 
 ## Installation
 ```
